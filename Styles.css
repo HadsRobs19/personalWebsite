@@ -1,0 +1,220 @@
+nav {
+	position: fixed;
+  z-index: 100;
+	width: 100%;
+	background-color: rgb(214, 211, 211);
+	font-size: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+   background-color: rgba(106, 106, 106, 0.785);
+   /* background: linear-gradient(90deg, rgba(81, 81, 83,1) 34%, rgba(0,0,0,1) 45%, rgba(168,168,170,1) 88%); */
+   -webkit-backdrop-filter: blur(20px);
+}
+nav a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 10px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	display: block;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 2px 2px rgb(81, 81, 83);
+}
+.toppart {
+	display: flex;
+	flex-direction: row;
+   text-shadow: 2px 2px rgba(81, 81, 83);
+}
+.name p {
+    position: relative;
+    padding-top: 200px
+}
+.mainpart {
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(39, 39, 39);
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	color: whitesmoke;
+	font-size: 50px;
+	padding-top: 500px;
+	height: 100vh;
+    background-image: url("picture1.png");
+    background-repeat: no-repeat;
+    background-size: 125% 120%;
+    background-position-y: 100%;
+    
+}
+
+body {
+	margin: 0;
+}
+nav a:hover {
+	color: rgb(120, 118, 118);
+}
+.name {
+	padding-left: 20px;
+	padding-right: 20px;
+	flex-direction: row;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+	color: black;
+	font-size: 30px;
+	padding-top: 40px;
+	text-align: center;
+}
+.name h1 {
+	position: relative;
+	animation-name: slide-from-left;
+	animation-duration: 5s;
+}
+.name h2 {
+	position: relative;
+	animation-name: slide-from-right;
+	animation-duration: 5s;
+}
+
+@keyframes slide-from-left {
+	0% {
+		left: -100vw;
+	}
+	100% {
+		left: 0;
+	}
+}
+@keyframes slide-from-right {
+	0% {
+		right: -100vw;
+	}
+	100% {
+		right: 0;
+	}
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+}
+.mySlides {
+  display: none;
+}
+.mySlides img {
+    width: auto;
+    height: 70vh;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade { 
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+img {
+    width: 40%;
+    height: 40%;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+#aboutme p {
+    font-size: 25px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: rgb(15, 15, 15);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+#aboutme {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 20vh; 
+}
+#aboutme a { 
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align:center;
+    margin-left: 17vw;
+    margin-right: 17vw;
+}
+
+.aboutpage {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(39, 39, 39);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: whitesmoke;
+    font-size: 25px;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 100px;
+    height: 50vh;
+    
+}
+.aboutpage p {
+  margin-left: 25vw;
+  margin-right: 25vw; 
+}
+footer {
+  background-color: rgba(81, 81, 83, 0.5);
+  width: 100%;
+  padding-bottom: 5vh;
+  text-align: center; 
+}
